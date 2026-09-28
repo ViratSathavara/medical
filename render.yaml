@@ -1,0 +1,17 @@
+# Render.com deployment config for the Express backend
+# Render reads this file automatically when you connect the GitHub repo
+
+services:
+  - type: web
+    name: medpulse-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      # Set the following in Render dashboard manually (sensitive values):
+      # MONGODB_URI, JWT_SECRET, JWT_REFRESH_SECRET, CLIENT_URL
