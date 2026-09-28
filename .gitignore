@@ -1,0 +1,85 @@
+# ==========================================
+# MedPulse — Master .gitignore
+# ==========================================
+
+# 1. Node.js & Dependencies (all folders & subfolders)
+node_modules/
+*/node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# 2. Build Outputs & Next.js Bundles
+.next/
+*/.next/
+**/.next/
+out/
+*/out/
+**/out/
+dist/
+*/dist/
+**/dist/
+build/
+*/build/
+**/build/
+.turbo/
+**/turbo/
+
+# 3. Environment Variables & Secret Keys
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+
+# 4. Uploads, Media & Generated Documents
+uploads/
+*/uploads/
+**/uploads/
+*.pdf
+public/uploads/
+
+# 5. Logs & Runtime Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# 6. Test & Coverage Reports
+coverage/
+*/coverage/
+**/coverage/
+.nyc_output/
+*.lcov
+
+# 7. OS & System Caches
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 8. Editor & IDE Settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 9. TypeScript & Next.js Artifacts
+*.tsbuildinfo
+next-env.d.ts
